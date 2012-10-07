@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9919A111621094D001E717B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9919A101621094D001E717B /* UIKit.framework */; };
+		E9919A131621094D001E717B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9919A121621094D001E717B /* Foundation.framework */; };
+		E9919A151621094D001E717B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9919A141621094D001E717B /* CoreGraphics.framework */; };
+		E9919A1B1621094D001E717B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9919A191621094D001E717B /* InfoPlist.strings */; };
+		E9919A1D1621094E001E717B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9919A1C1621094E001E717B /* main.m */; };
+		E9919A211621094E001E717B /* MHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9919A201621094E001E717B /* MHAppDelegate.m */; };
+		E9919A231621094E001E717B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E9919A221621094E001E717B /* Default.png */; };
+		E9919A251621094E001E717B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9919A241621094E001E717B /* Default@2x.png */; };
+		E9919A271621094E001E717B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9919A261621094E001E717B /* Default-568h@2x.png */; };
+		E9919A2A1621094E001E717B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9919A281621094E001E717B /* MainStoryboard.storyboard */; };
+		E9919A3E16210A30001E717B /* MHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9919A3D16210A30001E717B /* MHMainViewController.m */; };
+		E9919A4216210AE8001E717B /* MHBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9919A4116210AE8001E717B /* MHBaseCell.m */; };
+		E9919A45162112A6001E717B /* MHSimpleUSPhoneNumberController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9919A44162112A6001E717B /* MHSimpleUSPhoneNumberController.m */; };
+		E9919A471621138E001E717B /* libMHKitchenSink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9919A461621138E001E717B /* libMHKitchenSink.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E9919A0C1621094D001E717B /* MHKitchenSinkExampleApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHKitchenSinkExampleApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9919A101621094D001E717B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E9919A121621094D001E717B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E9919A141621094D001E717B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E9919A181621094D001E717B /* MHKitchenSinkExampleApplication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MHKitchenSinkExampleApplication-Info.plist"; sourceTree = "<group>"; };
+		E9919A1A1621094D001E717B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9919A1C1621094E001E717B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9919A1E1621094E001E717B /* MHKitchenSinkExampleApplication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHKitchenSinkExampleApplication-Prefix.pch"; sourceTree = "<group>"; };
+		E9919A1F1621094E001E717B /* MHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHAppDelegate.h; sourceTree = "<group>"; };
+		E9919A201621094E001E717B /* MHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAppDelegate.m; sourceTree = "<group>"; };
+		E9919A221621094E001E717B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E9919A241621094E001E717B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E9919A261621094E001E717B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E9919A291621094E001E717B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E9919A3C16210A30001E717B /* MHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHMainViewController.h; sourceTree = "<group>"; };
+		E9919A3D16210A30001E717B /* MHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMainViewController.m; sourceTree = "<group>"; };
+		E9919A4016210AE8001E717B /* MHBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHBaseCell.h; sourceTree = "<group>"; };
+		E9919A4116210AE8001E717B /* MHBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHBaseCell.m; sourceTree = "<group>"; };
+		E9919A43162112A6001E717B /* MHSimpleUSPhoneNumberController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHSimpleUSPhoneNumberController.h; sourceTree = "<group>"; };
+		E9919A44162112A6001E717B /* MHSimpleUSPhoneNumberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHSimpleUSPhoneNumberController.m; sourceTree = "<group>"; };
+		E9919A461621138E001E717B /* libMHKitchenSink.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libMHKitchenSink.a; path = "../build/Release-iphoneos/libMHKitchenSink.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9919A091621094D001E717B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9919A471621138E001E717B /* libMHKitchenSink.a in Frameworks */,
+				E9919A111621094D001E717B /* UIKit.framework in Frameworks */,
+				E9919A131621094D001E717B /* Foundation.framework in Frameworks */,
+				E9919A151621094D001E717B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9919A011621094D001E717B = {
+			isa = PBXGroup;
+			children = (
+				E9919A461621138E001E717B /* libMHKitchenSink.a */,
+				E9919A161621094D001E717B /* MHKitchenSinkExampleApplication */,
+				E9919A0F1621094D001E717B /* Frameworks */,
+				E9919A0D1621094D001E717B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9919A0D1621094D001E717B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9919A0C1621094D001E717B /* MHKitchenSinkExampleApplication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9919A0F1621094D001E717B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9919A101621094D001E717B /* UIKit.framework */,
+				E9919A121621094D001E717B /* Foundation.framework */,
+				E9919A141621094D001E717B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9919A161621094D001E717B /* MHKitchenSinkExampleApplication */ = {
+			isa = PBXGroup;
+			children = (
+				E9919A3F16210AAA001E717B /* Helpers */,
+				E9919A3C16210A30001E717B /* MHMainViewController.h */,
+				E9919A3D16210A30001E717B /* MHMainViewController.m */,
+				E9919A1F1621094E001E717B /* MHAppDelegate.h */,
+				E9919A201621094E001E717B /* MHAppDelegate.m */,
+				E9919A281621094E001E717B /* MainStoryboard.storyboard */,
+				E9919A171621094D001E717B /* Supporting Files */,
+				E9919A43162112A6001E717B /* MHSimpleUSPhoneNumberController.h */,
+				E9919A44162112A6001E717B /* MHSimpleUSPhoneNumberController.m */,
+			);
+			path = MHKitchenSinkExampleApplication;
+			sourceTree = "<group>";
+		};
+		E9919A171621094D001E717B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9919A181621094D001E717B /* MHKitchenSinkExampleApplication-Info.plist */,
+				E9919A191621094D001E717B /* InfoPlist.strings */,
+				E9919A1C1621094E001E717B /* main.m */,
+				E9919A1E1621094E001E717B /* MHKitchenSinkExampleApplication-Prefix.pch */,
+				E9919A221621094E001E717B /* Default.png */,
+				E9919A241621094E001E717B /* Default@2x.png */,
+				E9919A261621094E001E717B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9919A3F16210AAA001E717B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E9919A4016210AE8001E717B /* MHBaseCell.h */,
+				E9919A4116210AE8001E717B /* MHBaseCell.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9919A0B1621094D001E717B /* MHKitchenSinkExampleApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9919A301621094E001E717B /* Build configuration list for PBXNativeTarget "MHKitchenSinkExampleApplication" */;
+			buildPhases = (
+				E9919A081621094D001E717B /* Sources */,
+				E9919A091621094D001E717B /* Frameworks */,
+				E9919A0A1621094D001E717B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MHKitchenSinkExampleApplication;
+			productName = MHKitchenSinkExampleApplication;
+			productReference = E9919A0C1621094D001E717B /* MHKitchenSinkExampleApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9919A031621094D001E717B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MH;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Bobby Williams";
+			};
+			buildConfigurationList = E9919A061621094D001E717B /* Build configuration list for PBXProject "MHKitchenSinkExampleApplication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E9919A011621094D001E717B;
+			productRefGroup = E9919A0D1621094D001E717B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9919A0B1621094D001E717B /* MHKitchenSinkExampleApplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9919A0A1621094D001E717B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9919A1B1621094D001E717B /* InfoPlist.strings in Resources */,
+				E9919A231621094E001E717B /* Default.png in Resources */,
+				E9919A251621094E001E717B /* Default@2x.png in Resources */,
+				E9919A271621094E001E717B /* Default-568h@2x.png in Resources */,
+				E9919A2A1621094E001E717B /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9919A081621094D001E717B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9919A1D1621094E001E717B /* main.m in Sources */,
+				E9919A211621094E001E717B /* MHAppDelegate.m in Sources */,
+				E9919A3E16210A30001E717B /* MHMainViewController.m in Sources */,
+				E9919A4216210AE8001E717B /* MHBaseCell.m in Sources */,
+				E9919A45162112A6001E717B /* MHSimpleUSPhoneNumberController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9919A191621094D001E717B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9919A1A1621094D001E717B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E9919A281621094E001E717B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9919A291621094E001E717B /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9919A2E1621094E001E717B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9919A2F1621094E001E717B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9919A311621094E001E717B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHKitchenSinkExampleApplication/MHKitchenSinkExampleApplication-Prefix.pch";
+				INFOPLIST_FILE = "MHKitchenSinkExampleApplication/MHKitchenSinkExampleApplication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E9919A321621094E001E717B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MHKitchenSinkExampleApplication/MHKitchenSinkExampleApplication-Prefix.pch";
+				INFOPLIST_FILE = "MHKitchenSinkExampleApplication/MHKitchenSinkExampleApplication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9919A061621094D001E717B /* Build configuration list for PBXProject "MHKitchenSinkExampleApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9919A2E1621094E001E717B /* Debug */,
+				E9919A2F1621094E001E717B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9919A301621094E001E717B /* Build configuration list for PBXNativeTarget "MHKitchenSinkExampleApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9919A311621094E001E717B /* Debug */,
+				E9919A321621094E001E717B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9919A031621094D001E717B /* Project object */;
+}
