@@ -8,19 +8,27 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class MHSimpleUSPhoneNumberTextFieldDelegate;
+
+@protocol MHSimpleUSPhoneNumberEditorDelegate
+
+-(void) phoneNumberFieldHasChanged:(MHSimpleUSPhoneNumberTextFieldDelegate*) phoneNumberDelegate;
+
+@end
+
 //
 // TextFieldDelegate - based internal class does all the heavy lifting
 //
-@interface MHSimpleUSPhoneNumberTextField : UITextField <UITextFieldDelegate>
+@interface MHSimpleUSPhoneNumberTextFieldDelegate : NSObject <UITextFieldDelegate>
 
--(void) setPhoneNumber:(NSString*) phoneNumber;
+@property (weak, nonatomic)             UITextField*                            textField;
+@property (assign, readonly, nonatomic) BOOL                                    isValid;
+@property (weak, nonatomic)             id<MHSimpleUSPhoneNumberEditorDelegate> delegate;
 
-@end
-
-@interface MHSimpleUSPhoneNumberEditor : UIView
-
-@property (strong, nonatomic)  NSString* phoneNumber;
-@property (assign, nonatomic)  BOOL      isValid;
-@property (assign, nonatomic)  BOOL      strongConforming;
+-(id)    initAndAttach:(UITextField*) textField;
+-(void)  attach:(UITextField*) textField;
+-(void)  setPhoneNumber:(NSString*) phoneNumber;
 
 @end
+

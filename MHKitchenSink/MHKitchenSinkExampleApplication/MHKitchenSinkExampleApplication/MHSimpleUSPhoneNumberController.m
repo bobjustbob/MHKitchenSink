@@ -32,14 +32,30 @@
 - (void) viewWillAppear:(BOOL)animated
 {
    [super viewWillAppear:animated];
-   [MHSimpleUSPhoneNumberTextField class]; // whacky linker issue?
-   [self.phoneNumber setPhoneNumber:@"555.123.4567"];
+   self.phoneDelegate = [[MHSimpleUSPhoneNumberTextFieldDelegate alloc] initAndAttach:self.phoneNumber];
+   self.phoneDelegate.delegate = self;
+   [self.phoneDelegate setPhoneNumber:@"555.222.4567"];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+-(void) phoneNumberFieldHasChanged:(MHSimpleUSPhoneNumberTextFieldDelegate *)phoneNumberDelegate
+{
+   BOOL isValid = phoneNumberDelegate.isValid;
+   
+   if (isValid)
+   {
+      self.phoneNumber.backgroundColor = [UIColor greenColor];
+   }
+   else
+   {
+      self.phoneNumber.backgroundColor = [UIColor whiteColor];
+   }
 }
 
 @end

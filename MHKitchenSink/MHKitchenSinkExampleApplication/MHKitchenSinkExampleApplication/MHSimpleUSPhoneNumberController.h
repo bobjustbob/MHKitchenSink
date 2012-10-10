@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "../../MHKitchenSink/MHSimpleUSPhoneNumberEditor.h"
 
-@interface MHSimpleUSPhoneNumberController : UIViewController
+@interface MHSimpleUSPhoneNumberController : UIViewController <MHSimpleUSPhoneNumberEditorDelegate>
 
-@property (weak, nonatomic) IBOutlet MHSimpleUSPhoneNumberTextField *phoneNumber;
+@property (weak, nonatomic)   IBOutlet UITextField*                   phoneNumber;
+@property (strong, nonatomic) MHSimpleUSPhoneNumberTextFieldDelegate* phoneDelegate;
 
 @end
