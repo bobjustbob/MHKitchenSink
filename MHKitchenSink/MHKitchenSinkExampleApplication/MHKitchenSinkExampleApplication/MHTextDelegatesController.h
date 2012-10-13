@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "../../MHKitchenSink/MHSimpleUSPhoneNumberEditor.h"
+#import "../../MHKitchenSink/MHZipCodeTextFieldDelegate.h"
 
-@interface MHSimpleUSPhoneNumberController : UIViewController <MHSimpleUSPhoneNumberEditorDelegate>
+@interface MHTextDelegatesController : UIViewController <MHSimpleUSPhoneNumberEditorDelegate, MHZipCodeEditorDelegate>
 
 @property (weak, nonatomic)   IBOutlet UITextField*                   phoneNumber;
 @property (strong, nonatomic) MHSimpleUSPhoneNumberTextFieldDelegate* phoneDelegate;
+
+@property (weak, nonatomic)   IBOutlet UITextField*                   zipCode;
+@property (strong, nonatomic) MHZipCodeTextFieldDelegate*             zipcodeDelegate;
 
 @end

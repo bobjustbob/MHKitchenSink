@@ -32,7 +32,7 @@
    [super viewDidLoad];
    
    MHBaseCell* countDownCell   = [[MHBaseCell alloc] initWithTitle:@"MHCountDown" description:@"Countdown clock" seque:@"segueToCountDown"];
-   MHBaseCell* phoneNumberCell = [[MHBaseCell alloc] initWithTitle:@"Simple US Phone Number" description:@"Simple (###) ###-#### number editor" seque:@"segueToSimpleUSPhoneEditor"];
+   MHBaseCell* phoneNumberCell = [[MHBaseCell alloc] initWithTitle:@"Text Delegates" description:@"Various text editing delegate classes" seque:@"segueToSimpleUSPhoneEditor"];
 
    self.cells = @[countDownCell, phoneNumberCell];
 }

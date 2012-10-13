@@ -16,6 +16,8 @@
 		E99199F9162100D0001E717B /* MHCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = E99199F8162100D0001E717B /* MHCountDown.m */; };
 		E99199FD162101DC001E717B /* MHCountDownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E99199FC162101DC001E717B /* MHCountDownTests.m */; };
 		E9919A00162102A5001E717B /* MHSimpleUSPhoneNumberEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = E99199FF162102A5001E717B /* MHSimpleUSPhoneNumberEditor.m */; };
+		E9928E4D1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9928E4C1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m */; };
+		E9928E4E1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9928E4C1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		E99199FE162102A5001E717B /* MHSimpleUSPhoneNumberEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHSimpleUSPhoneNumberEditor.h; sourceTree = "<group>"; };
 		E99199FF162102A5001E717B /* MHSimpleUSPhoneNumberEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHSimpleUSPhoneNumberEditor.m; sourceTree = "<group>"; };
 		E9919A331621094E001E717B /* MHKitchenSinkExampleApplication.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MHKitchenSinkExampleApplication.xcodeproj; path = MHKitchenSinkExampleApplication/MHKitchenSinkExampleApplication.xcodeproj; sourceTree = "<group>"; };
+		E9928E4B1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHZipCodeTextFieldDelegate.h; sourceTree = "<group>"; };
+		E9928E4C1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHZipCodeTextFieldDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,8 @@
 				E99199F8162100D0001E717B /* MHCountDown.m */,
 				E99199FE162102A5001E717B /* MHSimpleUSPhoneNumberEditor.h */,
 				E99199FF162102A5001E717B /* MHSimpleUSPhoneNumberEditor.m */,
+				E9928E4B1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.h */,
+				E9928E4C1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 			files = (
 				E99199F9162100D0001E717B /* MHCountDown.m in Sources */,
 				E9919A00162102A5001E717B /* MHSimpleUSPhoneNumberEditor.m in Sources */,
+				E9928E4D1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E99199FD162101DC001E717B /* MHCountDownTests.m in Sources */,
+				E9928E4E1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

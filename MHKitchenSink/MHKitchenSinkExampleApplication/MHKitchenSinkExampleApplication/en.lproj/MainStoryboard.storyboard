@@ -43,7 +43,9 @@
                         </prototypes>
                         <sections/>
                     </tableView>
-                    <navigationItem key="navigationItem" title="MHKitchenSink Examples" id="Jx8-b4-lSN"/>
+                    <navigationItem key="navigationItem" title="MHKitchenSink Examples" id="Jx8-b4-lSN">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="KO5-co-BUa"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="ACb-xg-Jp8" kind="push" identifier="segueToSimpleUSPhoneEditor" id="9Md-Pq-1fV"/>
                     </connections>
@@ -52,29 +54,81 @@
             </objects>
             <point key="canvasLocation" x="593" y="74"/>
         </scene>
-        <!--SimpleUS Phone Number Controller - SimpleUSPhoneEditor-->
+        <!--Text Delegates Controller - TextFieldDelegates-->
         <scene sceneID="0IJ-cc-Wwd">
             <objects>
-                <viewController title="SimpleUSPhoneEditor" id="ACb-xg-Jp8" customClass="MHSimpleUSPhoneNumberController" sceneMemberID="viewController">
+                <viewController title="TextFieldDelegates" id="ACb-xg-Jp8" customClass="MHTextDelegatesController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mxS-un-s0D">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ks-Qy-vzi">
+                            <view opaque="NO" alpha="0.70000000000000007" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGx-pr-Lc4">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ks-Qy-vzi">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="Ozd-T0-Zzo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MHSimpleUSPhoneNumber" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3Q-wG-W9f">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="43h-oE-1bA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="3ks-Qy-vzi" firstAttribute="top" secondItem="I3Q-wG-W9f" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="5Fc-CI-u9O"/>
+                                    <constraint firstAttribute="bottom" secondItem="3ks-Qy-vzi" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="S57-Mg-RFt"/>
+                                    <constraint firstItem="3ks-Qy-vzi" firstAttribute="leading" secondItem="lGx-pr-Lc4" secondAttribute="leading" constant="17" id="SwK-nb-1I0"/>
+                                    <constraint firstItem="I3Q-wG-W9f" firstAttribute="leading" secondItem="lGx-pr-Lc4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="pan-ms-Ibd"/>
+                                    <constraint firstAttribute="trailing" secondItem="I3Q-wG-W9f" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="rno-ca-hiH"/>
+                                </constraints>
+                            </view>
+                            <view opaque="NO" alpha="0.70000000000000007" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhP-8t-ebK">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zgx-qS-fZ4">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MHZipCode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7d-b4-x6d">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Xao-PA-v3t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3ks-Qy-vzi" firstAttribute="top" secondItem="mxS-un-s0D" secondAttribute="top" constant="124" id="GZd-Xo-puv"/>
-                            <constraint firstItem="3ks-Qy-vzi" firstAttribute="leading" secondItem="mxS-un-s0D" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Y3V-Q6-VHa"/>
-                            <constraint firstAttribute="trailing" secondItem="3ks-Qy-vzi" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="vmG-uD-7LF"/>
+                            <constraint firstAttribute="bottom" secondItem="lGx-pr-Lc4" secondAttribute="bottom" constant="409" id="14A-lu-MST"/>
+                            <constraint firstItem="lGx-pr-Lc4" firstAttribute="trailing" secondItem="mxS-un-s0D" secondAttribute="trailing" type="default" id="1X0-kJ-qQ8"/>
+                            <constraint firstItem="zgx-qS-fZ4" firstAttribute="top" secondItem="mxS-un-s0D" secondAttribute="top" constant="148" id="2oe-06-sTs"/>
+                            <constraint firstAttribute="trailing" secondItem="W7d-b4-x6d" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="AJ7-ZV-193"/>
+                            <constraint firstItem="mhP-8t-ebK" firstAttribute="leading" secondItem="mxS-un-s0D" secondAttribute="leading" type="default" id="F0H-WJ-yZ1"/>
+                            <constraint firstItem="W7d-b4-x6d" firstAttribute="top" secondItem="mxS-un-s0D" secondAttribute="top" constant="115" id="S4A-oV-SWB"/>
+                            <constraint firstItem="mhP-8t-ebK" firstAttribute="top" secondItem="mxS-un-s0D" secondAttribute="top" constant="99" id="UWh-LT-bPa"/>
+                            <constraint firstItem="zgx-qS-fZ4" firstAttribute="leading" secondItem="mxS-un-s0D" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Y9u-3l-0IO"/>
+                            <constraint firstItem="lGx-pr-Lc4" firstAttribute="leading" secondItem="mxS-un-s0D" secondAttribute="leading" type="default" id="ase-ms-urk"/>
+                            <constraint firstAttribute="trailing" secondItem="zgx-qS-fZ4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bXg-qM-CYF"/>
+                            <constraint firstItem="mhP-8t-ebK" firstAttribute="trailing" secondItem="mxS-un-s0D" secondAttribute="trailing" type="default" id="oGx-jm-s06"/>
+                            <constraint firstItem="W7d-b4-x6d" firstAttribute="leading" secondItem="mxS-un-s0D" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qmC-qd-CEm"/>
+                            <constraint firstAttribute="bottom" secondItem="mhP-8t-ebK" secondAttribute="bottom" constant="293" id="vV3-Es-yCj"/>
+                            <constraint firstItem="lGx-pr-Lc4" firstAttribute="top" secondItem="mxS-un-s0D" secondAttribute="top" type="default" id="xTB-u0-KcG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="8MN-aZ-Ea6"/>
+                    <navigationItem key="navigationItem" title="TextDelegates" id="8MN-aZ-Ea6">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="XKq-yF-WqQ"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="phoneNumber" destination="3ks-Qy-vzi" id="pYy-Ij-HEY"/>
+                        <outlet property="zipCode" destination="zgx-qS-fZ4" id="Esv-iS-g4E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdK-f3-amn" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 Bobby Williams. All rights reserved.
 //
 
-#import "MHSimpleUSPhoneNumberController.h"
+#import "MHTextDelegatesController.h"
 
-@interface MHSimpleUSPhoneNumberController ()
+@interface MHTextDelegatesController ()
 
 @end
 
-@implementation MHSimpleUSPhoneNumberController
+@implementation MHTextDelegatesController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,6 +35,10 @@
    self.phoneDelegate = [[MHSimpleUSPhoneNumberTextFieldDelegate alloc] initAndAttach:self.phoneNumber];
    self.phoneDelegate.delegate = self;
    [self.phoneDelegate setPhoneNumber:@"555.222.4567"];
+   
+   self.zipcodeDelegate = [[MHZipCodeTextFieldDelegate alloc] initAndAttach:self.zipCode withOption:mhZipCodeNoPlus4];
+   self.zipcodeDelegate.delegate = self;
+   [self.zipcodeDelegate setZipCode:@"12345"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,6 +59,20 @@
    else
    {
       self.phoneNumber.backgroundColor = [UIColor whiteColor];
+   }
+}
+
+-(void) zipcodeFieldHasChanged:(MHZipCodeTextFieldDelegate*) zipcodeDelegate
+{
+   BOOL isValid = zipcodeDelegate.isValid;
+   
+   if (isValid)
+   {
+      self.zipCode.backgroundColor = [UIColor greenColor];
+   }
+   else
+   {
+      self.zipCode.backgroundColor = [UIColor whiteColor];
    }
 }
 

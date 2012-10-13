@@ -19,7 +19,7 @@
 		E9919A2A1621094E001E717B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9919A281621094E001E717B /* MainStoryboard.storyboard */; };
 		E9919A3E16210A30001E717B /* MHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9919A3D16210A30001E717B /* MHMainViewController.m */; };
 		E9919A4216210AE8001E717B /* MHBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9919A4116210AE8001E717B /* MHBaseCell.m */; };
-		E9919A45162112A6001E717B /* MHSimpleUSPhoneNumberController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9919A44162112A6001E717B /* MHSimpleUSPhoneNumberController.m */; };
+		E9919A45162112A6001E717B /* MHTextDelegatesController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9919A44162112A6001E717B /* MHTextDelegatesController.m */; };
 		E9919A471621138E001E717B /* libMHKitchenSink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9919A461621138E001E717B /* libMHKitchenSink.a */; };
 /* End PBXBuildFile section */
 
@@ -42,9 +42,9 @@
 		E9919A3D16210A30001E717B /* MHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMainViewController.m; sourceTree = "<group>"; };
 		E9919A4016210AE8001E717B /* MHBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHBaseCell.h; sourceTree = "<group>"; };
 		E9919A4116210AE8001E717B /* MHBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHBaseCell.m; sourceTree = "<group>"; };
-		E9919A43162112A6001E717B /* MHSimpleUSPhoneNumberController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHSimpleUSPhoneNumberController.h; sourceTree = "<group>"; };
-		E9919A44162112A6001E717B /* MHSimpleUSPhoneNumberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHSimpleUSPhoneNumberController.m; sourceTree = "<group>"; };
-		E9919A461621138E001E717B /* libMHKitchenSink.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libMHKitchenSink.a; path = "../build/Release-iphoneos/libMHKitchenSink.a"; sourceTree = "<group>"; };
+		E9919A43162112A6001E717B /* MHTextDelegatesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTextDelegatesController.h; sourceTree = "<group>"; };
+		E9919A44162112A6001E717B /* MHTextDelegatesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTextDelegatesController.m; sourceTree = "<group>"; };
+		E9919A461621138E001E717B /* libMHKitchenSink.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMHKitchenSink.a; path = "../build/Release-iphoneos/libMHKitchenSink.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 				E9919A201621094E001E717B /* MHAppDelegate.m */,
 				E9919A281621094E001E717B /* MainStoryboard.storyboard */,
 				E9919A171621094D001E717B /* Supporting Files */,
-				E9919A43162112A6001E717B /* MHSimpleUSPhoneNumberController.h */,
-				E9919A44162112A6001E717B /* MHSimpleUSPhoneNumberController.m */,
+				E9919A43162112A6001E717B /* MHTextDelegatesController.h */,
+				E9919A44162112A6001E717B /* MHTextDelegatesController.m */,
 			);
 			path = MHKitchenSinkExampleApplication;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 				E9919A211621094E001E717B /* MHAppDelegate.m in Sources */,
 				E9919A3E16210A30001E717B /* MHMainViewController.m in Sources */,
 				E9919A4216210AE8001E717B /* MHBaseCell.m in Sources */,
-				E9919A45162112A6001E717B /* MHSimpleUSPhoneNumberController.m in Sources */,
+				E9919A45162112A6001E717B /* MHTextDelegatesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +317,7 @@
 				E9919A321621094E001E717B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
