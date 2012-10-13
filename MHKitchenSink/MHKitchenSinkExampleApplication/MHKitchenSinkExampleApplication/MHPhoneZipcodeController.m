@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 Bobby Williams. All rights reserved.
 //
 
-#import "MHTextDelegatesController.h"
+#import "MHPhoneZipcodeController.h"
 
-@interface MHTextDelegatesController ()
+@interface MHPhoneZipcodeController ()
 
 @end
 
-@implementation MHTextDelegatesController
+@implementation MHPhoneZipcodeController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

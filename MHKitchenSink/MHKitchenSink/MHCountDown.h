@@ -8,14 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+@class MHCountDown;
+
+@protocol MHCountDownDelegate <NSObject>
+
+-(BOOL) updatedCountDown:(MHCountDown*) countdown;
+
+@end
+
 @interface MHCountDown : NSObject
 
-@property (assign, nonatomic) BOOL       futureTime;
-@property (assign, nonatomic) NSUInteger days;
-@property (assign, nonatomic) NSUInteger hours;
-@property (assign, nonatomic) NSUInteger minutes;
-@property (assign, nonatomic) NSUInteger seconds;
+@property (assign, readonly) BOOL       futureTime;
+@property (assign, readonly) NSUInteger days;
+@property (assign, readonly) NSUInteger hours;
+@property (assign, readonly) NSUInteger minutes;
+@property (assign, readonly) NSUInteger seconds;
 
-+(MHCountDown *) countdownForDate:(NSDate*) date;
++(MHCountDown *) countdownForDate:(NSDate*) date delegate:(id<MHCountDownDelegate>) delegate;
 
 @end

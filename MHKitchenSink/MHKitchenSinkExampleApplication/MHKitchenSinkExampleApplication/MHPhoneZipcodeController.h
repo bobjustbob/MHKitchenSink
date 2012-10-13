@@ -10,7 +10,7 @@
 #import "../../MHKitchenSink/MHSimpleUSPhoneNumberEditor.h"
 #import "../../MHKitchenSink/MHZipCodeTextFieldDelegate.h"
 
-@interface MHTextDelegatesController : UIViewController <MHSimpleUSPhoneNumberEditorDelegate, MHZipCodeEditorDelegate>
+@interface MHPhoneZipcodeController : UIViewController <MHSimpleUSPhoneNumberEditorDelegate, MHZipCodeEditorDelegate>
 
 @property (weak, nonatomic)   IBOutlet UITextField*                   phoneNumber;
 @property (strong, nonatomic) MHSimpleUSPhoneNumberTextFieldDelegate* phoneDelegate;

@@ -48,16 +48,58 @@
                     </navigationItem>
                     <connections>
                         <segue destination="ACb-xg-Jp8" kind="push" identifier="segueToSimpleUSPhoneEditor" id="9Md-Pq-1fV"/>
+                        <segue destination="BUP-tr-Aop" kind="push" identifier="segueToCountDown" id="4Nl-ab-rrP"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0n2-Ea-GDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="593" y="74"/>
         </scene>
-        <!--Text Delegates Controller - TextFieldDelegates-->
+        <!--Count Down Controller - Countdown Timer-->
+        <scene sceneID="Fup-Th-5AQ">
+            <objects>
+                <viewController id="BUP-tr-Aop" customClass="MHCountDownController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bpj-DA-RJZ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view opaque="NO" alpha="0.70000000000000007" contentMode="scaleToFill" id="0Qi-5p-LhZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Countdown to New Year's Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ouz-Bm-rQ0">
+                                        <rect key="frame" x="20" y="12" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vix-Mf-Opt">
+                                        <rect key="frame" x="20" y="43" width="280" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Countdown Timer" id="rQ2-Io-2ws"/>
+                    <connections>
+                        <outlet property="countdownFuture" destination="Vix-Mf-Opt" id="Uku-dO-sdd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65D-8A-yLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114" y="-180"/>
+        </scene>
+        <!--Phone Zipcode Controller - TextFieldDelegates-->
         <scene sceneID="0IJ-cc-Wwd">
             <objects>
-                <viewController title="TextFieldDelegates" id="ACb-xg-Jp8" customClass="MHTextDelegatesController" sceneMemberID="viewController">
+                <viewController title="TextFieldDelegates" id="ACb-xg-Jp8" customClass="MHPhoneZipcodeController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mxS-un-s0D">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -86,7 +128,7 @@
                                 <rect key="frame" x="0.0" y="80" width="320" height="116"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="XaY-lz-Oj7">
+                                    <segmentedControl contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="XaY-lz-Oj7">
                                         <rect key="frame" x="20" y="72" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <segments>
@@ -117,7 +159,7 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="TextDelegates" id="8MN-aZ-Ea6">
+                    <navigationItem key="navigationItem" title="Phone and ZIPCODE" id="8MN-aZ-Ea6">
                         <barButtonItem key="backBarButtonItem" title="Back" id="XKq-yF-WqQ"/>
                     </navigationItem>
                     <connections>
@@ -128,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdK-f3-amn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116" y="76"/>
+            <point key="canvasLocation" x="1114" y="397"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mfh-Gh-449">
@@ -147,11 +189,17 @@
         </scene>
     </scenes>
     <classes>
+        <class className="MHCountDownController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MHCountDownController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="countdownFuture" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="MHMainViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MHMainViewController.h"/>
         </class>
-        <class className="MHTextDelegatesController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MHTextDelegatesController.h"/>
+        <class className="MHPhoneZipcodeController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MHPhoneZipcodeController.h"/>
             <relationships>
                 <relationship kind="action" name="plus4OptionChanged:"/>
                 <relationship kind="outlet" name="phoneNumber" candidateClass="UITextField"/>
