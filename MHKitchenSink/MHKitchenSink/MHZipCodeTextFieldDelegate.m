@@ -33,12 +33,30 @@
    return numberString;
 }
 
--(NSString*) normalizedInput:(NSString*) normalizedString
+-(NSString*) normalizeOutput:(NSString*) string
 {
-   normalizedString = [normalizedString stringByReplacingOccurrencesOfString:@"-" withString:@""];
-   normalizedString = [self stringWithNumbersOnly:normalizedString maxLen:ZIPCODE_LEN];
+   NSString*   normalizedString = @"";
+   NSUInteger  strLength = [string length];
    
+   if (strLength)
+   {
+      for (int i = 0; i < strLength; i++)
+      {
+         if (i == 5)
+         {
+            normalizedString = [normalizedString stringByAppendingString:@"-"];
+         }
+         normalizedString = [normalizedString stringByAppendingFormat:@"%C", [string characterAtIndex:i]];
+      }
+   }
    return normalizedString;
+}
+
+
+-(NSString*) normalizedInput:(NSString*) string
+{
+   NSString* normalizedString = [string stringByReplacingOccurrencesOfString:@"-" withString:@""];
+   return [self stringWithNumbersOnly:normalizedString maxLen: self.zipCodeOptions == mhZipCodeNoPlus4 ? ZIPCODE_LEN : (ZIPCODE_LEN + ZIPCODE_PLUS4_LEN)];
 }
 
 -(NSString*) normalizedInput:(NSRange) range replacementString:(NSString*) string
@@ -48,10 +66,11 @@
 }
 
 
+#pragma mark - property methods
 -(BOOL) isValid
 {
    BOOL       valid = NO;
-   NSUInteger len   = self.textField.text.length;
+   NSUInteger len   = [self normalizedInput: self.textField.text].length;
    switch (self.zipCodeOptions)
    {
       case mhZipCodeNoPlus4:
@@ -59,7 +78,7 @@
          break;
          
       case mnZipCodePlus4Optional:
-         valid = (len == ZIPCODE_LEN) || (len = (ZIPCODE_LEN + ZIPCODE_PLUS4_LEN));
+         valid = (len == ZIPCODE_LEN) || (len == (ZIPCODE_LEN + ZIPCODE_PLUS4_LEN));
          break;
          
       case mhZipCodePlus4Required:
@@ -71,6 +90,15 @@
    }
    return valid;
 }
+
+-(void) setZipCodeOptions:(MHZipCodeOptions)zipCodeOptions
+{
+   _zipCodeOptions = zipCodeOptions;
+   
+   [self setZipCode:self.textField.text];
+}
+
+#pragma mark -
 
 -(id) initAndAttach:(UITextField*) textField withOption:(MHZipCodeOptions) option;
 {
@@ -87,19 +115,24 @@
 
 -(void)  attach:(UITextField*) textField
 {
-   self.textField = textField;
-   self.textField.delegate = self;
+   self.textField              = textField;
+   self.textField.delegate     = self;
+   self.textField.keyboardType = UIKeyboardTypeNumberPad;
 }
 
 -(void)  setZipCode:(NSString*) zipCode
 {
-   self.textField.text = zipCode;
+   self.textField.text = [self normalizeOutput: [self normalizedInput:zipCode]];
+   if (self.delegate)
+   {
+      [self.delegate zipcodeFieldHasChanged:self];
+   }
 }
 
 -(BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
    NSString* inputStr  = [self normalizedInput:range replacementString:string];
-   NSString* outputStr = inputStr; //[self normalizeOutput:inputStr];
+   NSString* outputStr = [self normalizeOutput:inputStr];
    
    self.textField.text = outputStr;
    

@@ -18,4 +18,7 @@
 @property (weak, nonatomic)   IBOutlet UITextField*                   zipCode;
 @property (strong, nonatomic) MHZipCodeTextFieldDelegate*             zipcodeDelegate;
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *plus4picker;
+- (IBAction)plus4OptionChanged:(id)sender;
+
 @end

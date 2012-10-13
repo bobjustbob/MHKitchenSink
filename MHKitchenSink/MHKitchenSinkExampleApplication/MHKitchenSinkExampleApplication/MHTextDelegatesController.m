@@ -39,6 +39,8 @@
    self.zipcodeDelegate = [[MHZipCodeTextFieldDelegate alloc] initAndAttach:self.zipCode withOption:mhZipCodeNoPlus4];
    self.zipcodeDelegate.delegate = self;
    [self.zipcodeDelegate setZipCode:@"12345"];
+   
+   [self.plus4picker setSelectedSegmentIndex:mhZipCodeNoPlus4];
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,4 +78,8 @@
    }
 }
 
+- (IBAction)plus4OptionChanged:(id)sender
+{
+   self.zipcodeDelegate.zipCodeOptions = [self.plus4picker selectedSegmentIndex];
+}
 @end
