@@ -31,9 +31,12 @@ typedef enum
 @property (assign, readonly, nonatomic) BOOL                        isValid;
 @property (weak, nonatomic)             id<MHZipCodeEditorDelegate> delegate;
 @property (assign, nonatomic)           MHZipCodeOptions            zipCodeOptions;
+@property (weak, nonatomic)             NSString*                   zipCode;
+@property (readonly, nonatomic)         NSString*                   formattedZipCode;
 
--(id)    initAndAttach:(UITextField*) textField withOption:(MHZipCodeOptions) option;
--(void)  attach:(UITextField*) textField;
--(void)  setZipCode:(NSString*) zipCode;
+-(id)        initAndAttach:(UITextField*) textField withOption:(MHZipCodeOptions) option;
+-(void)      attach:(UITextField*) textField;
+
+-(NSString*) formattedZipCode;
 
 @end

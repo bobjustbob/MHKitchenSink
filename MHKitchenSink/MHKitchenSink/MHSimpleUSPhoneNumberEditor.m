@@ -41,6 +41,15 @@
    }
 }
 
+-(NSString*) phoneNumber
+{
+   return [self normalizedInput:self.textField.text];
+}
+
+-(NSString*) formattedPhoneNumber
+{
+   return self.textField.text;
+}
 
 -(BOOL) isValid
 {

@@ -21,4 +21,10 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *plus4picker;
 - (IBAction)plus4OptionChanged:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UISwitch *phoneColorSwitch;
+- (IBAction)phoneNumberColorToggle:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UISwitch *zipColorSwitch;
+- (IBAction)zipCodeColorToggle:(id)sender;
+
 @end

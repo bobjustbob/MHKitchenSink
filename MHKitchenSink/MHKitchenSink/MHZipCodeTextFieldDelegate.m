@@ -67,6 +67,18 @@
 
 
 #pragma mark - property methods
+
+-(NSString*) zipCode
+{
+   return [self normalizedInput:self.textField.text];
+}
+
+
+-(NSString*) formattedZipCode
+{
+   return self.textField.text;
+}
+
 -(BOOL) isValid
 {
    BOOL       valid = NO;

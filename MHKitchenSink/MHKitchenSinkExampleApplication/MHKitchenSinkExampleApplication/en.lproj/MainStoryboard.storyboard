@@ -65,7 +65,7 @@
                         <subviews>
                             <view opaque="NO" alpha="0.70000000000000007" contentMode="scaleToFill" id="0Qi-5p-LhZ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Countdown to New Year's Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ouz-Bm-rQ0">
                                         <rect key="frame" x="20" y="12" width="280" height="21"/>
@@ -109,7 +109,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="3ks-Qy-vzi">
-                                        <rect key="frame" x="17" y="34" width="280" height="30"/>
+                                        <rect key="frame" x="17" y="34" width="130" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -121,6 +121,20 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="HWC-AN-sdw">
+                                        <rect key="frame" x="223" y="37" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="phoneNumberColorToggle:" destination="ACb-xg-Jp8" eventType="valueChanged" id="Jrm-SG-odW"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Color" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EXV-Bk-JUL">
+                                        <rect key="frame" x="166" y="40" width="49" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -128,6 +142,19 @@
                                 <rect key="frame" x="0.0" y="80" width="320" height="116"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="zgx-qS-fZ4">
+                                        <rect key="frame" x="20" y="34" width="130" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MHZipCode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W7d-b4-x6d">
+                                        <rect key="frame" x="20" y="8" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <segmentedControl contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="XaY-lz-Oj7">
                                         <rect key="frame" x="20" y="72" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -140,22 +167,24 @@
                                             <action selector="plus4OptionChanged:" destination="ACb-xg-Jp8" eventType="valueChanged" id="1bV-VD-Yuv"/>
                                         </connections>
                                     </segmentedControl>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="gX0-WX-oSJ">
+                                        <rect key="frame" x="223" y="37" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="phoneNumberColorToggle:" destination="ACb-xg-Jp8" eventType="valueChanged" id="8VA-dL-TBO"/>
+                                            <action selector="zipCodeColorToggle:" destination="ACb-xg-Jp8" eventType="valueChanged" id="MpE-3l-9qm"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Color" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9gq-7I-NxR">
+                                        <rect key="frame" x="166" y="40" width="49" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="zgx-qS-fZ4">
-                                <rect key="frame" x="20" y="114" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MHZipCode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W7d-b4-x6d">
-                                <rect key="frame" x="20" y="88" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
@@ -163,9 +192,11 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="XKq-yF-WqQ"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="phoneColorSwitch" destination="HWC-AN-sdw" id="Km0-wE-67l"/>
                         <outlet property="phoneNumber" destination="3ks-Qy-vzi" id="pYy-Ij-HEY"/>
                         <outlet property="plus4picker" destination="XaY-lz-Oj7" id="to6-ZQ-7cY"/>
                         <outlet property="zipCode" destination="zgx-qS-fZ4" id="Esv-iS-g4E"/>
+                        <outlet property="zipColorSwitch" destination="gX0-WX-oSJ" id="OuZ-tw-Cvt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdK-f3-amn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -188,26 +219,6 @@
             <point key="canvasLocation" x="138" y="74"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="MHCountDownController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MHCountDownController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="countdownFuture" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="MHMainViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MHMainViewController.h"/>
-        </class>
-        <class className="MHPhoneZipcodeController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MHPhoneZipcodeController.h"/>
-            <relationships>
-                <relationship kind="action" name="plus4OptionChanged:"/>
-                <relationship kind="outlet" name="phoneNumber" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="plus4picker" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="zipCode" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -25,10 +25,11 @@
 @property (weak, nonatomic)             UITextField*                            textField;
 @property (assign, readonly, nonatomic) BOOL                                    isValid;
 @property (weak, nonatomic)             id<MHSimpleUSPhoneNumberEditorDelegate> delegate;
+@property (weak, nonatomic)             NSString*                               phoneNumber;
+@property (readonly, nonatomic)         NSString*                               formattedPhoneNumber;
 
--(id)    initAndAttach:(UITextField*) textField;
--(void)  attach:(UITextField*) textField;
--(void)  setPhoneNumber:(NSString*) phoneNumber;
+-(id)        initAndAttach:(UITextField*) textField;
+-(void)      attach:(UITextField*) textField;
 
 @end
 

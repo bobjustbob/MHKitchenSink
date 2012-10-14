@@ -32,15 +32,14 @@
 - (void) viewWillAppear:(BOOL)animated
 {
    [super viewWillAppear:animated];
-   self.phoneDelegate = [[MHSimpleUSPhoneNumberTextFieldDelegate alloc] initAndAttach:self.phoneNumber];
-   self.phoneDelegate.delegate = self;
-   [self.phoneDelegate setPhoneNumber:@"555.222.4567"];
-   
-   self.zipcodeDelegate = [[MHZipCodeTextFieldDelegate alloc] initAndAttach:self.zipCode withOption:mhZipCodeNoPlus4];
-   self.zipcodeDelegate.delegate = self;
-   [self.zipcodeDelegate setZipCode:@"12345"];
+   self.phoneDelegate             = [[MHSimpleUSPhoneNumberTextFieldDelegate alloc] initAndAttach:self.phoneNumber];
+   self.phoneDelegate.delegate    = self;
+   self.phoneDelegate.phoneNumber = @"555.222.4567";
    
    [self.plus4picker setSelectedSegmentIndex:mhZipCodeNoPlus4];
+   self.zipcodeDelegate          = [[MHZipCodeTextFieldDelegate alloc] initAndAttach:self.zipCode withOption:mhZipCodeNoPlus4];
+   self.zipcodeDelegate.delegate = self;
+   self.zipcodeDelegate.zipCode  = @"12345";
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,7 +53,7 @@
 {
    BOOL isValid = phoneNumberDelegate.isValid;
    
-   if (isValid)
+   if (isValid && (self.phoneColorSwitch.on))
    {
       self.phoneNumber.backgroundColor = [UIColor greenColor];
    }
@@ -68,7 +67,7 @@
 {
    BOOL isValid = zipcodeDelegate.isValid;
    
-   if (isValid)
+   if (isValid && (self.zipColorSwitch.on))
    {
       self.zipCode.backgroundColor = [UIColor greenColor];
    }
@@ -81,5 +80,15 @@
 - (IBAction)plus4OptionChanged:(id)sender
 {
    self.zipcodeDelegate.zipCodeOptions = [self.plus4picker selectedSegmentIndex];
+}
+
+- (IBAction)phoneNumberColorToggle:(id)sender
+{
+   [self phoneNumberFieldHasChanged:self.phoneDelegate];
+}
+
+- (IBAction)zipCodeColorToggle:(id)sender
+{
+   [self zipcodeFieldHasChanged:self.zipcodeDelegate];
 }
 @end
