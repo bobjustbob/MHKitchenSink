@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E908BE5A162B33E000FD7511 /* MHCurrencyTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E908BE59162B33E000FD7511 /* MHCurrencyTextFieldDelegate.m */; };
+		E908BE5B162B33E000FD7511 /* MHCurrencyTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E908BE59162B33E000FD7511 /* MHCurrencyTextFieldDelegate.m */; };
 		E99199D0162100A3001E717B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99199CF162100A3001E717B /* Foundation.framework */; };
 		E99199DF162100A3001E717B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99199DE162100A3001E717B /* SenTestingKit.framework */; };
 		E99199E1162100A3001E717B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99199E0162100A3001E717B /* UIKit.framework */; };
@@ -50,6 +52,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E908BE58162B33E000FD7511 /* MHCurrencyTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHCurrencyTextFieldDelegate.h; sourceTree = "<group>"; };
+		E908BE59162B33E000FD7511 /* MHCurrencyTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHCurrencyTextFieldDelegate.m; sourceTree = "<group>"; };
 		E99199CC162100A3001E717B /* libMHKitchenSink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMHKitchenSink.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99199CF162100A3001E717B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E99199D3162100A3001E717B /* MHKitchenSink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHKitchenSink-Prefix.pch"; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 				E99199FF162102A5001E717B /* MHSimpleUSPhoneNumberEditor.m */,
 				E9928E4B1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.h */,
 				E9928E4C1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m */,
+				E908BE58162B33E000FD7511 /* MHCurrencyTextFieldDelegate.h */,
+				E908BE59162B33E000FD7511 /* MHCurrencyTextFieldDelegate.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 				E99199F9162100D0001E717B /* MHCountDown.m in Sources */,
 				E9919A00162102A5001E717B /* MHSimpleUSPhoneNumberEditor.m in Sources */,
 				E9928E4D1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m in Sources */,
+				E908BE5A162B33E000FD7511 /* MHCurrencyTextFieldDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +312,7 @@
 			files = (
 				E99199FD162101DC001E717B /* MHCountDownTests.m in Sources */,
 				E9928E4E1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m in Sources */,
+				E908BE5B162B33E000FD7511 /* MHCurrencyTextFieldDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

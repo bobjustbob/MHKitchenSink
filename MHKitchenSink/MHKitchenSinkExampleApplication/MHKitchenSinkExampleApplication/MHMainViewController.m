@@ -33,8 +33,9 @@
    
    MHBaseCell* countDownCell   = [[MHBaseCell alloc] initWithTitle:@"MHCountDown" description:@"Countdown clock" seque:@"segueToCountDown"];
    MHBaseCell* phoneNumberCell = [[MHBaseCell alloc] initWithTitle:@"Phone Number/ZIPCODE" description:@"US Phone and ZIPCODE delegates" seque:@"segueToSimpleUSPhoneEditor"];
+   MHBaseCell* currencyCell    = [[MHBaseCell alloc] initWithTitle:@"Currency" description:@"Currency text delegate example" seque:@"segueToCurrency"];
 
-   self.cells = @[countDownCell, phoneNumberCell];
+   self.cells = @[countDownCell, phoneNumberCell, currencyCell];
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E908BE5E162B3D6600FD7511 /* MHCurrencyController.m in Sources */ = {isa = PBXBuildFile; fileRef = E908BE5D162B3D6600FD7511 /* MHCurrencyController.m */; };
 		E9919A111621094D001E717B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9919A101621094D001E717B /* UIKit.framework */; };
 		E9919A131621094D001E717B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9919A121621094D001E717B /* Foundation.framework */; };
 		E9919A151621094D001E717B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9919A141621094D001E717B /* CoreGraphics.framework */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E908BE5C162B3D6600FD7511 /* MHCurrencyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHCurrencyController.h; sourceTree = "<group>"; };
+		E908BE5D162B3D6600FD7511 /* MHCurrencyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHCurrencyController.m; sourceTree = "<group>"; };
 		E9919A0C1621094D001E717B /* MHKitchenSinkExampleApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHKitchenSinkExampleApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9919A101621094D001E717B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E9919A121621094D001E717B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,6 +104,8 @@
 				E9919A3D16210A30001E717B /* MHMainViewController.m */,
 				E9919A1F1621094E001E717B /* MHAppDelegate.h */,
 				E9919A201621094E001E717B /* MHAppDelegate.m */,
+				E908BE5C162B3D6600FD7511 /* MHCurrencyController.h */,
+				E908BE5D162B3D6600FD7511 /* MHCurrencyController.m */,
 				E9919A43162112A6001E717B /* MHPhoneZipcodeController.h */,
 				E9919A44162112A6001E717B /* MHPhoneZipcodeController.m */,
 				E9919A281621094E001E717B /* MainStoryboard.storyboard */,
@@ -207,6 +212,7 @@
 				E9919A4216210AE8001E717B /* MHBaseCell.m in Sources */,
 				E9919A45162112A6001E717B /* MHPhoneZipcodeController.m in Sources */,
 				E9BFDFB01629E822009FAB2D /* MHCountDownController.m in Sources */,
+				E908BE5E162B3D6600FD7511 /* MHCurrencyController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
