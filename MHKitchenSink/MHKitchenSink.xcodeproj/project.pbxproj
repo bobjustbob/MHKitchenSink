@@ -8,28 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E908BE5A162B33E000FD7511 /* MHCurrencyTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E908BE59162B33E000FD7511 /* MHCurrencyTextFieldDelegate.m */; };
-		E908BE5B162B33E000FD7511 /* MHCurrencyTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E908BE59162B33E000FD7511 /* MHCurrencyTextFieldDelegate.m */; };
 		E99199D0162100A3001E717B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99199CF162100A3001E717B /* Foundation.framework */; };
-		E99199DF162100A3001E717B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99199DE162100A3001E717B /* SenTestingKit.framework */; };
-		E99199E1162100A3001E717B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99199E0162100A3001E717B /* UIKit.framework */; };
-		E99199E2162100A3001E717B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99199CF162100A3001E717B /* Foundation.framework */; };
-		E99199E5162100A3001E717B /* libMHKitchenSink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99199CC162100A3001E717B /* libMHKitchenSink.a */; };
-		E99199EB162100A3001E717B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E99199E9162100A3001E717B /* InfoPlist.strings */; };
 		E99199F9162100D0001E717B /* MHCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = E99199F8162100D0001E717B /* MHCountDown.m */; };
-		E99199FD162101DC001E717B /* MHCountDownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E99199FC162101DC001E717B /* MHCountDownTests.m */; };
 		E9919A00162102A5001E717B /* MHSimpleUSPhoneNumberEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = E99199FF162102A5001E717B /* MHSimpleUSPhoneNumberEditor.m */; };
 		E9928E4D1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9928E4C1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m */; };
-		E9928E4E1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9928E4C1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E99199E3162100A3001E717B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E99199C3162100A3001E717B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E99199CB162100A3001E717B;
-			remoteInfo = MHKitchenSink;
-		};
 		E9919A3716210953001E717B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E9919A331621094E001E717B /* MHKitchenSinkExampleApplication.xcodeproj */;
@@ -57,15 +42,10 @@
 		E99199CC162100A3001E717B /* libMHKitchenSink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMHKitchenSink.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99199CF162100A3001E717B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E99199D3162100A3001E717B /* MHKitchenSink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHKitchenSink-Prefix.pch"; sourceTree = "<group>"; };
-		E99199DD162100A3001E717B /* MHKitchenSinkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHKitchenSinkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99199DE162100A3001E717B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		E99199E0162100A3001E717B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		E99199E8162100A3001E717B /* MHKitchenSinkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MHKitchenSinkTests-Info.plist"; sourceTree = "<group>"; };
-		E99199EA162100A3001E717B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E99199F7162100D0001E717B /* MHCountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHCountDown.h; sourceTree = "<group>"; };
 		E99199F8162100D0001E717B /* MHCountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHCountDown.m; sourceTree = "<group>"; };
-		E99199FB162101DC001E717B /* MHCountDownTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHCountDownTests.h; sourceTree = "<group>"; };
-		E99199FC162101DC001E717B /* MHCountDownTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHCountDownTests.m; sourceTree = "<group>"; };
 		E99199FE162102A5001E717B /* MHSimpleUSPhoneNumberEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHSimpleUSPhoneNumberEditor.h; sourceTree = "<group>"; };
 		E99199FF162102A5001E717B /* MHSimpleUSPhoneNumberEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHSimpleUSPhoneNumberEditor.m; sourceTree = "<group>"; };
 		E9919A331621094E001E717B /* MHKitchenSinkExampleApplication.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MHKitchenSinkExampleApplication.xcodeproj; path = MHKitchenSinkExampleApplication/MHKitchenSinkExampleApplication.xcodeproj; sourceTree = "<group>"; };
@@ -82,17 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E99199D9162100A3001E717B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E99199DF162100A3001E717B /* SenTestingKit.framework in Frameworks */,
-				E99199E1162100A3001E717B /* UIKit.framework in Frameworks */,
-				E99199E2162100A3001E717B /* Foundation.framework in Frameworks */,
-				E99199E5162100A3001E717B /* libMHKitchenSink.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -101,7 +70,6 @@
 			children = (
 				E9919A331621094E001E717B /* MHKitchenSinkExampleApplication.xcodeproj */,
 				E99199D1162100A3001E717B /* MHKitchenSink */,
-				E99199E6162100A3001E717B /* MHKitchenSinkTests */,
 				E99199CE162100A3001E717B /* Frameworks */,
 				E99199CD162100A3001E717B /* Products */,
 			);
@@ -111,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				E99199CC162100A3001E717B /* libMHKitchenSink.a */,
-				E99199DD162100A3001E717B /* MHKitchenSinkTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,25 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				E99199D3162100A3001E717B /* MHKitchenSink-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E99199E6162100A3001E717B /* MHKitchenSinkTests */ = {
-			isa = PBXGroup;
-			children = (
-				E99199E7162100A3001E717B /* Supporting Files */,
-				E99199FB162101DC001E717B /* MHCountDownTests.h */,
-				E99199FC162101DC001E717B /* MHCountDownTests.m */,
-			);
-			path = MHKitchenSinkTests;
-			sourceTree = "<group>";
-		};
-		E99199E7162100A3001E717B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E99199E8162100A3001E717B /* MHKitchenSinkTests-Info.plist */,
-				E99199E9162100A3001E717B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -205,25 +153,6 @@
 			productReference = E99199CC162100A3001E717B /* libMHKitchenSink.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		E99199DC162100A3001E717B /* MHKitchenSinkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E99199F4162100A3001E717B /* Build configuration list for PBXNativeTarget "MHKitchenSinkTests" */;
-			buildPhases = (
-				E99199D8162100A3001E717B /* Sources */,
-				E99199D9162100A3001E717B /* Frameworks */,
-				E99199DA162100A3001E717B /* Resources */,
-				E99199DB162100A3001E717B /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E99199E4162100A3001E717B /* PBXTargetDependency */,
-			);
-			name = MHKitchenSinkTests;
-			productName = MHKitchenSinkTests;
-			productReference = E99199DD162100A3001E717B /* MHKitchenSinkTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -252,7 +181,6 @@
 			projectRoot = "";
 			targets = (
 				E99199CB162100A3001E717B /* MHKitchenSink */,
-				E99199DC162100A3001E717B /* MHKitchenSinkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,33 +195,6 @@
 		};
 /* End PBXReferenceProxy section */
 
-/* Begin PBXResourcesBuildPhase section */
-		E99199DA162100A3001E717B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E99199EB162100A3001E717B /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E99199DB162100A3001E717B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		E99199C8162100A3001E717B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -306,36 +207,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E99199D8162100A3001E717B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E99199FD162101DC001E717B /* MHCountDownTests.m in Sources */,
-				E9928E4E1628A0ED00134E22 /* MHZipCodeTextFieldDelegate.m in Sources */,
-				E908BE5B162B33E000FD7511 /* MHCurrencyTextFieldDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E99199E4162100A3001E717B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E99199CB162100A3001E717B /* MHKitchenSink */;
-			targetProxy = E99199E3162100A3001E717B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E99199E9162100A3001E717B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E99199EA162100A3001E717B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E99199EF162100A3001E717B /* Debug */ = {
@@ -409,36 +281,6 @@
 			};
 			name = Release;
 		};
-		E99199F5162100A3001E717B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MHKitchenSink/MHKitchenSink-Prefix.pch";
-				INFOPLIST_FILE = "MHKitchenSinkTests/MHKitchenSinkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		E99199F6162100A3001E717B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MHKitchenSink/MHKitchenSink-Prefix.pch";
-				INFOPLIST_FILE = "MHKitchenSinkTests/MHKitchenSinkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -456,15 +298,6 @@
 			buildConfigurations = (
 				E99199F2162100A3001E717B /* Debug */,
 				E99199F3162100A3001E717B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E99199F4162100A3001E717B /* Build configuration list for PBXNativeTarget "MHKitchenSinkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E99199F5162100A3001E717B /* Debug */,
-				E99199F6162100A3001E717B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
