@@ -42,7 +42,6 @@
 		E99199CC162100A3001E717B /* libMHKitchenSink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMHKitchenSink.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99199CF162100A3001E717B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E99199D3162100A3001E717B /* MHKitchenSink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHKitchenSink-Prefix.pch"; sourceTree = "<group>"; };
-		E99199DE162100A3001E717B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		E99199E0162100A3001E717B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E99199F7162100D0001E717B /* MHCountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHCountDown.h; sourceTree = "<group>"; };
 		E99199F8162100D0001E717B /* MHCountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHCountDown.m; sourceTree = "<group>"; };
@@ -87,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				E99199CF162100A3001E717B /* Foundation.framework */,
-				E99199DE162100A3001E717B /* SenTestingKit.framework */,
 				E99199E0162100A3001E717B /* UIKit.framework */,
 			);
 			name = Frameworks;
