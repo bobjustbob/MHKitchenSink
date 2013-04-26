@@ -81,6 +81,8 @@
 
 -(NSString*) doubleToCurrency:(double) currencyValue
 {
+   if (!currencyValue && self.zeroIsBlank) { return @""; }
+   
    NSNumberFormatter* nf = [[NSNumberFormatter alloc] init];
    
    [nf setNumberStyle:NSNumberFormatterCurrencyStyle];

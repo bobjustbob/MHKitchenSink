@@ -25,6 +25,7 @@
 @property (weak, nonatomic)             UITextField*                  textField;
 @property (assign, readonly, nonatomic) BOOL                          isValid;
 @property (assign, nonatomic)           BOOL                          wholeNumbers;
+@property (assign, nonatomic)           BOOL                          zeroIsBlank;
 @property (weak, nonatomic)             id<MHCurrencyEditorDelegate>  delegate;
 @property (assign, nonatomic)           double                        currency;
 @property (readonly, nonatomic)         NSString*                     formattedCurrency;
