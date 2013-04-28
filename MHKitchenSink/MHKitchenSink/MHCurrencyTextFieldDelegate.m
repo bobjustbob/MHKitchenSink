@@ -101,7 +101,8 @@
    NSString* inputStr =  [self.textField.text stringByReplacingCharactersInRange:range withString:string];
    
    if (self.delegate) {
-      [self.delegate editingCurrencyField:self nonZeorValue:[self currencyToDouble:inputStr] > 0.0];
+      _currency = [self currencyToDouble:inputStr];
+      [self.delegate editingCurrencyField:self nonZeorValue:self.currency > 0.0];
    }
    
    return YES;
