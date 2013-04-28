@@ -98,9 +98,11 @@
 
 -(BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
-//   NSString* inputStr =  [self.textField.text stringByReplacingCharactersInRange:range withString:string];
-//   
-//   [self setCurrency:[self currencyToDouble:inputStr]];
+   NSString* inputStr =  [self.textField.text stringByReplacingCharactersInRange:range withString:string];
+   
+   if (self.delegate) {
+      [self.delegate editingCurrencyField:self nonZeorValue:[self currencyToDouble:inputStr] > 0.0];
+   }
    
    return YES;
 }

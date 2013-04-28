@@ -14,6 +14,7 @@
 @protocol MHCurrencyEditorDelegate
 
 -(void) currencyFieldHasChanged:(MHCurrencyTextFieldDelegate*) currencyDelegate;
+-(void) editingCurrencyField:(MHCurrencyTextFieldDelegate*) currencyDelegate nonZeorValue:(BOOL) nonZero;
 
 @end
 

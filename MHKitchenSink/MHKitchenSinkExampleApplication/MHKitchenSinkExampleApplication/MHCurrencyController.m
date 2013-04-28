@@ -47,7 +47,11 @@
 
 -(void) currencyFieldHasChanged:(MHCurrencyTextFieldDelegate *)currencyDelegate
 {
-   
+   NSLog(@"CURRENCY field has changed");
+}
+
+-(void) editingCurrencyField:(MHCurrencyTextFieldDelegate *)currencyDelegate nonZeorValue:(BOOL)nonZero {
+   NSLog(@"editing currency field non-zero is %@", nonZero ? @"YES" : @"NO");
 }
 
 - (IBAction)wholeNumberChange:(id)sender
