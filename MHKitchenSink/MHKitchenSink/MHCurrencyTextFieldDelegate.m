@@ -41,6 +41,13 @@
    }
 }
 
+-(void) setZeroIsBlank:(BOOL)zeroIsBlank {
+   _zeroIsBlank = zeroIsBlank;
+   
+   if (self.textField) {
+      [self textFieldDidEndEditing:self.textField];
+   }
+}
 
 -(void) setWholeNumbers:(BOOL)wholeNumbers
 {

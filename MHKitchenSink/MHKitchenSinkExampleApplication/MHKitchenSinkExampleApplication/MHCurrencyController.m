@@ -14,15 +14,6 @@
 
 @implementation MHCurrencyController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -35,14 +26,9 @@
    
    self.currencyDelegate      = [[MHCurrencyTextFieldDelegate alloc] initAndAttach:self.currencyField];
    self.currencyDelegate.delegate    = self;
-   self.currencyDelegate.currency =  250.50;
+   self.currencyDelegate.zeroIsBlank = YES;
+   self.currencyDelegate.currency =  0; //250.50;
    
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(void) currencyFieldHasChanged:(MHCurrencyTextFieldDelegate *)currencyDelegate
